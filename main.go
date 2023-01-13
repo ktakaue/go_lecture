@@ -34,6 +34,14 @@ func main() {
 	fmt.Println(rand.Intn(10))
 }
 
-func kevin(x, y int)int {
+func kevin(x, y int) int {
 	return x + y
+}
+
+func anmoku()  {
+	var i, j int = 1,2
+	k := 3
+	var c, python, java = true, false, "no!"
+	fmt.Println(i,j,k,c,python,java)
+
 }
