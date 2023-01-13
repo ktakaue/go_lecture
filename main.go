@@ -15,8 +15,6 @@ func main() {
 	// console.log的な
 	// timeをimportしてdate now()的な
 	fmt.Println(time.Now())
-	var kevin string = "kevin";
-	fmt.Println(kevin)
 	var hello string = "hello world Go";
 	fmt.Println(hello)
 	// 2ついれる
@@ -32,16 +30,27 @@ func main() {
 	fmt.Println(tetete)
 	outer()
 	fmt.Println(rand.Intn(10))
+	pointer()
 }
 
-func kevin(x, y int) int {
-	return x + y
-}
 
 func anmoku()  {
 	var i, j int = 1,2
 	k := 3
-	var c, python, java = true, false, "no!"
+	c, python, java := true, false, "no!"
 	fmt.Println(i,j,k,c,python,java)
 
 }
+
+func kevin() {
+	var sum  = 0
+	for i :=0; i < 10; i++ {
+		sum = i + 16
+		fmt.Println(sum)
+	}
+}
+func pointer(){
+var point = "akasatana"
+var resultPointer *string = &point
+fmt.Println(resultPointer)
+	}
