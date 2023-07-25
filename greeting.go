@@ -1,13 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 func main() {
 
-// 小文字だとこのファイル内でしか使えない
-	num := 1
-// 大文字だと他のファイルからも使える
-	NUM := 2
-
-
-	fmt.Println(num, NUM)
+	num := 123
+	var num2 int = 456
+	num3 := 1.23
+	var num4 float64 = 4.5678911111
+	fmt.Println(reflect.TypeOf(num))
+	fmt.Println(reflect.TypeOf(num2))
+	fmt.Println(reflect.TypeOf(num3))
+	fmt.Println(reflect.TypeOf(num4))
 }
