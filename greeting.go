@@ -1,17 +1,16 @@
 package main
 
-import (
-	"fmt"
-	"reflect"
-)
+import "fmt"
+
 func main() {
 
-	num := 123
-	var num2 int = 456
-	num3 := 1.23
-	var num4 float64 = 4.5678911111
-	fmt.Println(reflect.TypeOf(num))
-	fmt.Println(reflect.TypeOf(num2))
-	fmt.Println(reflect.TypeOf(num3))
-	fmt.Println(reflect.TypeOf(num4))
+	// 配列の要素数を指定せずに宣言する
+	a :=[...]string{"hello","world","!"}
+	fmt.Println(a[0],a[1],a[2])
+
+
+	// スライスで宣言する
+	b :=[]string{"hello","world","!"}
+	b = append(b, "appendkevikevi")
+	fmt.Println(b[0],b[1],b[2],b[3])
 }
