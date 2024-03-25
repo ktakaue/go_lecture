@@ -4,5 +4,5 @@ import "time"
 
 func main(){
 	println("Hello, World!")
-	println(time.Now())
+	print(time.Now().String())
 }
